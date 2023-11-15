@@ -13,12 +13,12 @@
 
 extern char **environ;
 
-void display_prompt();
+void display_prompt(void);
 int read_input(char *input);
 void parse_input(char *input, char *commands[], char *delimiters);
 void execute_command(char *command, char *commands[]);
 void handle_exit(int status);
 void handle_cd(char *directory);
-void handle_env();
+void handle_env(void);
 
 #endif
